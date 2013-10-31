@@ -90,6 +90,9 @@
     <Reference Include="Akavache">
       <HintPath>..\ext\Monoandroid\Akavache.dll</HintPath>
     </Reference>
+    <Reference Include="Octokit">
+      <HintPath>..\ext\Monoandroid\Octokit.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />

@@ -60,6 +60,9 @@
     <Reference Include="Akavache.Portable">
       <HintPath>..\ext\Monotouch\Akavache.Portable.dll</HintPath>
     </Reference>
+    <Reference Include="Octokit">
+      <HintPath>..\ext\Monotouch\Octokit.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -68,5 +71,6 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Compile Include="ViewModels\TestViewModel.cs" />
+    <Compile Include="ViewModels\NotificationsListViewModel.cs" />
   </ItemGroup>
 </Project>
