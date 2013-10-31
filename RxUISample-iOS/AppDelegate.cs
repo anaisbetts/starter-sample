@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
-using Starter.Views;
+using RxUISample.Views;
 using ReactiveUI;
 
-namespace Starter
+namespace RxUISample
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
     // User Interface of the application, as well as listening (and optionally responding) to 

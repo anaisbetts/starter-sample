@@ -7,12 +7,12 @@ using Android.Widget;
 using Android.OS;
 using ReactiveUI.Android;
 using ReactiveUI;
-using Starter.Core.ViewModels;
+using RxUISample.Core.ViewModels;
 using Akavache;
 
-namespace Starter.Views
+namespace RxUISample.Views
 {
-    [Activity (Label = "Starter-Android", MainLauncher = true)]
+    [Activity (Label = "RxUISample-Android", MainLauncher = true)]
     public class TestActivity : ReactiveActivity, IViewFor<TestViewModel>
     {
         int count = 1;
@@ -20,7 +20,7 @@ namespace Starter.Views
         protected override async void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            BlobCache.ApplicationName = "Starter";
+            BlobCache.ApplicationName = "RxUISample";
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);

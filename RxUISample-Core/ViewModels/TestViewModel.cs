@@ -2,7 +2,7 @@ using System;
 using ReactiveUI;
 using System.Runtime.Serialization;
 
-namespace Starter.Core.ViewModels
+namespace RxUISample.Core.ViewModels
 {
     [DataContract]
     public class TestViewModel : ReactiveObject

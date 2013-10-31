@@ -7,7 +7,7 @@
 using MonoTouch.Foundation;
 using System.CodeDom.Compiler;
 
-namespace Starter.Views
+namespace RxUISample.Views
 {
 	[Register ("TestViewController")]
 	partial class TestViewController

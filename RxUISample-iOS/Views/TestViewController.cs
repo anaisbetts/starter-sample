@@ -4,11 +4,11 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using ReactiveUI.Cocoa;
 using ReactiveUI;
-using Starter.Core.ViewModels;
+using RxUISample.Core.ViewModels;
 using Akavache;
 using System.Reactive.Linq;
 
-namespace Starter.Views
+namespace RxUISample.Views
 {
     public partial class TestViewController : ReactiveViewController, IViewFor<TestViewModel>
     {

@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starter-iOS", "Starter-iOS\Starter-iOS.csproj", "{044066A7-4F56-429A-8866-B14CF24E4D41}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxUISample-iOS", "RxUISample-iOS\RxUISample-iOS.csproj", "{044066A7-4F56-429A-8866-B14CF24E4D41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starter-Core-iOS", "Starter-Core\Starter-Core-iOS.csproj", "{B44B8C61-31FB-4598-86F0-DDA8A18F2993}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxUISample-Core-iOS", "RxUISample-Core\RxUISample-Core-iOS.csproj", "{B44B8C61-31FB-4598-86F0-DDA8A18F2993}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starter-Android", "Starter-Android\Starter-Android.csproj", "{A12987FB-B625-4502-9D11-89F5A29F7E51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxUISample-Android", "RxUISample-Android\RxUISample-Android.csproj", "{A12987FB-B625-4502-9D11-89F5A29F7E51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starter-Core-Android", "Starter-Core\Starter-Core-Android.csproj", "{BD5211E4-6E61-413D-A872-681DAF322379}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxUISample-Core-Android", "RxUISample-Core\RxUISample-Core-Android.csproj", "{BD5211E4-6E61-413D-A872-681DAF322379}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +69,6 @@ Global
 		{BD5211E4-6E61-413D-A872-681DAF322379}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Starter-iOS\Starter-iOS.csproj
+		StartupItem = RxUISample-iOS\RxUISample-iOS.csproj
 	EndGlobalSection
 EndGlobal

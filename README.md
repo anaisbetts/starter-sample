@@ -1,4 +1,4 @@
-# Starter Project for Mobile Applications
+# RxUISample Project for Mobile Applications
 
 This project is a base project for cross-platform mobile applications that
 should help you get started quicker without hours of right-clicking.
@@ -25,9 +25,9 @@ script/cibuild
 
 ## What's the project structure here?
 
-1. Starter-Android: The main Android app project.
-1. Starter-iOS: The main iOS (both iPhone and iPad) application project.
-1. Starter-Core: Code that is shared between the two projects. Note that at
+1. RxUISample-Android: The main Android app project.
+1. RxUISample-iOS: The main iOS (both iPhone and iPad) application project.
+1. RxUISample-Core: Code that is shared between the two projects. Note that at
    the moment, these are two separate projects, but they'll be one single
    csproj soon once Xamarin releases proper Portable Library support.
 
@@ -38,7 +38,7 @@ script/cibuild
 The idea is, that we want to create our models (i.e. stuff we save to disk and
 stuff we send over the network) and ViewModels (a class that represents the
 *behavior* of an app screen, by describing how properties are related to each
-other) in the Starter-Core library. 
+other) in the RxUISample-Core library. 
 
 Ideally, the vast majority of our app will live in this library, because
 everything we don't put in here we have to write twice, **and** is super hard
@@ -48,17 +48,17 @@ In this app, what we mean by "View" is, on iOS is a UIViewController and
 friends, and on Android is usually an Activity. Both of these classes are hard
 to test, so we want them to be as dumb as possible.
 
-Here are some things that belong in Starter-Core:
+Here are some things that belong in RxUISample-Core:
 
 1. Anything related to sending stuff to the network
 1. Anything related to loading/saving user's data
 1. All of our ViewModel classes (i.e. for every screen in the app, we'll have
    a ViewModel class)
 
-So, it's important that Starter-Core not do platform-specific things - if
-you're talking about CGRects in a Starter-Core class, you're Doing It Wrong™.
+So, it's important that RxUISample-Core not do platform-specific things - if
+you're talking about CGRects in a RxUISample-Core class, you're Doing It Wrong™.
 
-Here are some things that will end up in Starter-{Platform}
+Here are some things that will end up in RxUISample-{Platform}
 
 1. The app startup code (i.e. AppDelegate)
 1. A ViewController or Activity for every screen in the app. 
@@ -67,7 +67,7 @@ Here are some things that will end up in Starter-{Platform}
 
 ## How do I add a new screen to the app?
 
-1. Create a new ViewModel class in Starter-Core and derive it from
+1. Create a new ViewModel class in RxUISample-Core and derive it from
    ReactiveObject. Put all of the interesting code in here - calling REST
    APIs, validating stuff, you name it!
 1. Walk over to the iOS project, create a new "Universal View Controller",

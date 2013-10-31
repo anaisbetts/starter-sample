@@ -8,13 +8,13 @@
     <ProjectGuid>{A12987FB-B625-4502-9D11-89F5A29F7E51}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>Starter</RootNamespace>
+    <RootNamespace>RxUISample</RootNamespace>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AssemblyName>Starter-Android</AssemblyName>
+    <AssemblyName>RxUISample-Android</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
   </PropertyGroup>
@@ -108,9 +108,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Starter-Core\Starter-Core-Android.csproj">
+    <ProjectReference Include="..\RxUISample-Core\RxUISample-Core-Android.csproj">
       <Project>{BD5211E4-6E61-413D-A872-681DAF322379}</Project>
-      <Name>Starter-Core-Android</Name>
+      <Name>RxUISample-Core-Android</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
