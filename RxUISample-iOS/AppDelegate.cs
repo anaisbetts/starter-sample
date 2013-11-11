@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using RxUISample.Views;
 using ReactiveUI;
+using Octokit;
 
 namespace RxUISample
 {
@@ -16,7 +18,7 @@ namespace RxUISample
     {
         // class-level declarations
         UIWindow window;
-        TestViewController viewController;
+        NotificationsListViewController viewController;
         //
         // This method is invoked when the application has loaded and is ready to run. In this 
         // method you should instantiate the window, load the UI into it and then make the window
@@ -41,7 +43,11 @@ namespace RxUISample
 
             window = new UIWindow(UIScreen.MainScreen.Bounds);
 
-            viewController = new TestViewController();
+            var client = new GitHubClient(new System.Net.Http.Headers.ProductHeaderValue("RxUISample", "0.1"));
+            client.Credentials = new Credentials("paulcbetts", GiveMeAToken.DoIt());
+            r.RegisterConstant(client.Notification, typeof(INotificationsClient));
+
+            viewController = new NotificationsListViewController();
             window.RootViewController = viewController;
             window.MakeKeyAndVisible();
             

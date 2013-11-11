@@ -23,7 +23,8 @@
     <MtouchLink>None</MtouchLink>
     <ConsolePause>false</ConsolePause>
     <MtouchDebug>true</MtouchDebug>
-    <MtouchI18n />
+    <MtouchI18n>
+    </MtouchI18n>
     <MtouchArch>ARMv7</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
@@ -46,9 +47,11 @@
     <MtouchDebug>true</MtouchDebug>
     <ConsolePause>false</ConsolePause>
     <CodesignKey>iPhone Developer</CodesignKey>
-    <IpaPackageName />
+    <IpaPackageName>
+    </IpaPackageName>
     <MtouchLink>None</MtouchLink>
-    <MtouchI18n />
+    <MtouchI18n>
+    </MtouchI18n>
     <MtouchArch>ARMv7</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
@@ -129,6 +132,10 @@
     <Reference Include="Akavache.Mobile">
       <HintPath>..\ext\Monotouch\Akavache.Mobile.dll</HintPath>
     </Reference>
+    <Reference Include="Octokit">
+      <HintPath>..\ext\Monotouch\Octokit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -140,14 +147,12 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="Views\TestViewController.cs" />
-    <Compile Include="Views\TestViewController.designer.cs">
-      <DependentUpon>TestViewController.cs</DependentUpon>
+    <Compile Include="Views\NotificationsListViewController.cs" />
+    <Compile Include="Views\GiveMeAToken.cs" />
+    <Compile Include="Views\NotificationTileView.cs" />
+    <Compile Include="Views\NotificationTileView.designer.cs">
+      <DependentUpon>NotificationTileView.cs</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <InterfaceDefinition Include="Views\TestViewController_iPhone.xib" />
-    <InterfaceDefinition Include="Views\TestViewController_iPad.xib" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -155,5 +160,8 @@
       <Project>{B44B8C61-31FB-4598-86F0-DDA8A18F2993}</Project>
       <Name>RxUISample-Core-iOS</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Views\NotificationTileView.xib" />
   </ItemGroup>
 </Project>

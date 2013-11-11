@@ -7,19 +7,19 @@
 using MonoTouch.Foundation;
 using System.CodeDom.Compiler;
 
-namespace RxUISample.Views
+namespace RxUISample
 {
-	[Register ("TestViewController")]
-	partial class TestViewController
+	[Register ("NotificationTileView")]
+	partial class NotificationTileView
 	{
 		[Outlet]
-		MonoTouch.UIKit.UILabel TheGuid { get; set; }
+		MonoTouch.UIKit.UILabel title { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (TheGuid != null) {
-				TheGuid.Dispose ();
-				TheGuid = null;
+			if (title != null) {
+				title.Dispose ();
+				title = null;
 			}
 		}
 	}

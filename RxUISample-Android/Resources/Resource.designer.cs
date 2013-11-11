@@ -26,7 +26,7 @@ namespace RxUISample
 		
 		public static void UpdateIdValues()
 		{
-			RxUISample.Core.Resource.String.library_name = RxUISample.Resource.String.library_name;
+			global::RxUISample.Core.Resource.String.library_name = global::RxUISample.Resource.String.library_name;
 		}
 		
 		public partial class Attribute
