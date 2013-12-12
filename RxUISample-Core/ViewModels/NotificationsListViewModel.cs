@@ -20,7 +20,8 @@ namespace RxUISample
 
             var loadedNotifications = LoadNotifications.RegisterAsync(_ => 
                 //BlobCache.LocalMachine.GetAndFetchLatest("notifications", () => Observable.Return(new List<Notification>())));
-                BlobCache.LocalMachine.GetAndFetchLatest("notifications", () => notificationsApi.GetAllForCurrent()));
+                BlobCache.LocalMachine.GetAndFetchLatest("notifications", () => 
+                    notificationsApi.GetAllForCurrent()));
 
             loadedNotifications.Subscribe(newItems => {
                 using (Notifications.SuppressChangeNotifications()) {

@@ -34,12 +34,14 @@ namespace RxUISample
             // via Type.GetType, unlike every other platform (even 
             // Xamarin.Android). So, we've got to manually do what RxUI and 
             // Akavache would normally do for us
-            var r = RxApp.MutableResolver;
+            var r = new ModernDependencyResolver();
+            (new ReactiveUI.Registrations()).Register((f,t) => r.Register(f, t));
             (new ReactiveUI.Cocoa.Registrations()).Register((f,t) => r.Register(f, t));
             (new ReactiveUI.Mobile.Registrations()).Register((f,t) => r.Register(f, t));
             (new Akavache.Registrations()).Register(r.Register);
             (new Akavache.Mobile.Registrations()).Register(r.Register);
             (new Akavache.Sqlite3.Registrations()).Register(r.Register);
+            RxApp.DependencyResolver = r;
 
             window = new UIWindow(UIScreen.MainScreen.Bounds);
 
